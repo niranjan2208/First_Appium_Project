@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="practise.AppiumFramework.ECommerceTestCase_4">
+        <parameter name="feature" value="SC/OMS/VerifyOrder"/>
+        <parameter name="tcId" value="20000"/>
+        <parameter name="ucId" value="1000"/>
+        <methods>
+          <include name="tearDown"/>
+          <include name="init"/>
+          <include name="verifyTotalTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- practise.AppiumFramework.ECommerceTestCase_4 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

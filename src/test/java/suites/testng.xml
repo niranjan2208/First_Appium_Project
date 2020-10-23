@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="resources.Listeners"/>
+	</listeners>
+  <test thread-count="2" name="Test" parallel="classes">
+    <classes>
+      <class name="practise.AppiumFramework.ECommerceTestCase_4">
+      	<parameter name="feature" value="SC/OMS/VerifyOrder"/>
+      	<parameter name="ucId" value="1000"/>
+    	<parameter name="tcId" value="20000"/>
+      </class>
+      <class name="practise.AppiumFramework.ECommerceTestCase_4">
+      	<parameter name="feature" value="SC/OMS/VerifyOrder"/>
+      	<parameter name="ucId" value="1000"/>
+    	<parameter name="tcId" value="20000"/>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
